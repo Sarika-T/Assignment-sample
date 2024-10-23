@@ -1,0 +1,140 @@
+.bottom{
+    &-page{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        &-middle{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            &-content{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 5px;
+                gap: 5px;
+                > img{
+                    width:50%;
+                    height:60px;
+                }
+                > a{
+                    text-decoration: none;
+                    color: black;
+                    margin-left: 7px;
+                }
+                &-title{
+                    margin-left: 7px;
+                    font-size: 20px;
+                    font-weight: 600;
+                }
+            }
+            &-content1{
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                margin-left: 5px;
+                gap: 5px;
+                &-title{
+                    font-size: 20px;
+                    font-weight: 600; 
+                }
+                &-social{
+                    display: flex;
+                    gap: 20px;
+                    > img {
+                        width: 15%;
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+        &-end{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            &-content{
+                width: 20%;
+                display: flex;
+                align-items: start;
+                > svg{
+                    width: 50px;
+                    height: 50px;
+                }
+                &-right{
+                    display: flex;
+                    align-items: start;
+                    flex-direction: column;
+                    &-title{
+                        margin-left: 6px;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    &-mail{
+                        align-items: center;
+                        display: flex;
+                        justify-content: left;
+                        > img{
+                            width: 10%;
+                        }
+                    }
+                    &-subname{
+                        color: grey;
+                        margin-left: 6px;
+                    }
+                }
+            }
+            &-phone{
+                width: 10%;
+                align-items: center;
+                display: flex;
+                gap: 2px;
+            }
+            &-button{
+                width: 70%;
+                display: flex;
+                justify-content: end;
+                height: 40px;
+                margin-right: 8px;
+            }
+        }
+    }
+}
+
+
+
+.text-with-colored-lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+    font-size: 24px;
+    height: 0px;
+    top: -8px;
+    &-span{
+        background-color: midnightblue;
+        border-radius: 50%;
+        width: 35px;
+        color: white;
+    }
+}
+
+.text-with-colored-lines::before,
+.text-with-colored-lines::after {
+    content: '';
+    flex: 1; 
+    height: 4px; 
+    background: linear-gradient(to right, royalblue , steelblue , green , orange, orangered , red , deeppink , purple, blue,purple , deeppink , red, orangered ,  green , deeppink , steelblue, royalblue);
+}
+
+// .text-with-colored-lines::before {
+//     background: linear-gradient(to right, royalblue , steelblue , green , orange, orangered , red , deeppink , purple, blue,purple , deeppink , red, orangered ,  green , deeppink , steelblue, royalblue);
+// }
+
+// .text-with-colored-lines::after {
+//     background: linear-gradient(to right, blue , purple , deeppink , red, orangered ,  green , deeppink , steelblue, royalblue); 
+// }

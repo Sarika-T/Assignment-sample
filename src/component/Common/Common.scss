@@ -1,0 +1,61 @@
+.MuiButton-root , button , .MuiButtonBase-root {
+    &.dropdown-button {
+            font-size: 14px;
+            text-transform: capitalize;
+            color: black;
+    }
+}
+
+.MuiButton-root , button , .MuiButtonBase-root {
+    &.button-style {
+            text-transform: capitalize;
+    }
+}
+
+.MuiButton-startIcon{
+    margin-right: 0px !important;
+}
+
+.MuiInputBase-root {
+    &.search-input{
+        width: 100%;
+        
+    }
+}
+
+.MuiList-root {
+    &.drawer-list {
+        display: flex;
+        gap: 40px;
+        flex-direction: column;
+        margin-top: 50px;
+        width: 100%;
+    }
+}
+
+.MuiListItem-root {
+    &.drawer-listitem {
+        border-radius: 20px;
+        width: 100%;
+        box-shadow: 1px 2px 2px 1px rgba(0, 0, 0, 0.14);
+    }
+}
+
+.MuiListItemButton-root , button , .MuiButtonBase-root {
+    &.drawer-listbutton {
+        text-align: center;
+    }
+}
+
+.MuiListItemText-root {
+    &.drawer-text{
+        font-size: 20px;
+        &.MuiTypography-root{
+            font-size: 20px;
+        }
+    }
+}
+
+.css-rizt0-MuiTypography-root{
+    font-size: 20px !important;
+}
